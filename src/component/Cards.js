@@ -10,7 +10,7 @@ function Cards() {
         <div className='cards__wrapper'>
           <ul className='cards__items'>
             <CardItem
-              src='./public/images/img-9.jpg'
+              src='images/JOBS.jpg'
               text='Employment type: Full-time
               Job category: Information Technology
               Job industry: Information Technology And Service
@@ -19,7 +19,7 @@ function Cards() {
               path='/services'
             />
             <CardItem
-              src='./public/images/img-2.jpg'
+              src='images/JOBS.jpg'
               text='Employment type: Full-time
               Job category: Information Technology
               Job industry: Information Technology And Services
@@ -28,7 +28,7 @@ function Cards() {
               path='/services'
             />
             <CardItem
-              src='./public/images/img-3.jpg'
+              src='images/JOBS.jpg'
               text='Employment type: Full-time
               Job category: Information Technology
               Job industry: Information Technology And Services

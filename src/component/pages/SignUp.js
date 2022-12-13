@@ -2,12 +2,16 @@ import './SignUp.css';
 import React, { Component }  from 'react';
 function SignUp() {
   return (
-    <div className="main">
+    <div className="main" style={{backgroundImage: "url(/images/account.jpg)", backgroundPosition: 'center',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    width: '100vw',
+    height: '100vh' }}>
      <div className="sub-main">
        <div>
          <div className="imgs">
            <div className="container-image">
-             <img src="/public/images/a.png" className="profile"/>
+             <img src="images/a.png" className="profile"/>
 
            </div>
 
@@ -16,11 +20,11 @@ function SignUp() {
          <div>
            <h1>Login Page</h1>
            <div>
-             <img src="/public/images/email.jpg" className="email"/>
+             <img src="images/email.jpg" className="email"/>
              <input type="text" placeholder="user name" className="name"/>
            </div>
            <div className="second-input">
-             <img src="/public/images/image/pass.png" className="email"/>
+             <img src="images/image/pass.png" className="email"/>
              <input type="password" placeholder="user name" className="name"/>
            </div>
           <div className="login-button">
