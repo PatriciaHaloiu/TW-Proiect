@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# JOBWHEEL – Platformă Web de Promovare a Oportunităților Profesionale
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**JOBWHEEL** este o aplicație web realizată în React, dedicată prezentării de anunțuri de angajare, servicii și funcționalități de tip showcase pentru utilizatori interesați de piața muncii în domeniul IT.
 
-## Available Scripts
+## Funcționalități principale
 
-In the project directory, you can run:
+- **Navigare modernă și responsive** (`Navbar.js`)
+  - Meniu dinamic cu evidențiere pe scroll
+  - Buton de sign-up vizibil adaptat la dimensiunea ecranului
 
-### `npm start`
+- **Landing Page** (`Home.js`)
+  - Hero section cu fundal video (`HeroSection.js`)
+  - Prezentare de joburi în format card (`Cards.js` + `CardItem.js`)
+  - Footer cu linkuri utile și rețele sociale (`Footer.js`)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Anunțuri și servicii**
+  - Pagina `Announcement.js`: afișează o pagină vizuală pentru anunțuri curente
+  - Pagina `Services.js`: pagină dedicată serviciilor promovate
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Interacțiune**
+  - Butoane reutilizabile cu stiluri și dimensiuni multiple (`Button.js`)
+  - Pagina `SignUp.js`: interfață grafică pentru autentificare (simulată)
 
-### `npm test`
+## Structura componentelor
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+| Componentă         | Funcționalitate                                             |
+|--------------------|-------------------------------------------------------------|
+| `Navbar.js`        | Meniu principal cu navigare și responsive design            |
+| `HeroSection.js`   | Secțiune principală cu titlu, text și butoane de acțiune    |
+| `Cards.js`         | Afișare dinamică a ofertelor de joburi                      |
+| `CardItem.js`      | Componentă individuală de tip card                          |
+| `Button.js`        | Buton reutilizabil cu stiluri predefinite                   |
+| `Footer.js`        | Informații de subsol și rețele sociale                      |
+| `Announcement.js`  | Pagina de anunțuri (background full-screen)                 |
+| `Services.js`      | Pagina dedicată serviciilor                                 |
+| `Home.js`          | Combină `HeroSection`, `Cards` și `Footer`                 |
+| `SignUp.js`        | Interfață simplă de login (mockup static)                   |
 
-### `npm run build`
+## Tehnologii utilizate
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React.js (CRA)
+- React Router DOM
+- HTML/CSS (custom + responsivitate)
+- Font Awesome pentru iconuri
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Cerințe
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Node.js + npm
+- React 17+ / 18+
+- Browser modern pentru redare video și responsive layout
 
-### `npm run eject`
+## Instalare locală
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+npm install
+npm start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Aplicația va rula la `http://localhost:3000/`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Autor
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Proiect web educațional – vitrină pentru oferte de angajare în IT, realizat în React.
